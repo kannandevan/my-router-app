@@ -1,0 +1,22 @@
+.details{
+    padding: 15px;
+}
+.details .body{
+    font-size: 10px;
+    color: slategray;
+}
+.submenu{
+    margin-top: 20px;
+}
+.submenu a{
+    text-decoration: none;
+    color: wheat;
+}
+.submenu span{
+    padding: 5px;
+    display: inline-block;
+    background-color: darkgray;
+}
+.submenu .active span{
+    background-color: rgb(6, 16, 43);
+}

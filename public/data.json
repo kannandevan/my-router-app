@@ -3,80 +3,107 @@
         "id": 1,
         "name": "Albert",
         "class": "6",
-        "address": "Kollam house, meppadi, TVMM",
-        "phone": "9677526257",
-        "isActve": false
+        "address": "1270 Diamond Springs Rd #102",
+        "phone": "0987098098",
+        "isActive": false,
+        "marks": {
+            "physics": [46, 66, 78, 56, 87],
+            "chemistry": [76, 62, 71, 86, 36],
+            "maths": [76, 86, 98, 86, 67]
+
+        },
+        "sports": {
+            "highjump": 1,
+            "longjump": -1
+        },
+        "remarks": ["Notes not submitted"]
     },
     {
         "id": 2,
-        "name": "Bincy",
+        "name": "Joseph",
         "class": "7",
-        "address": "Rose villa, varkala, TVMM",
-        "phone": "8745632145",
-        "isActve": true
+        "address": "325 Kennedy Memorial Dr",
+        "phone": "07978689865",
+        "isActive": true,
+        "marks": {
+            "physics": [56, 66, 78, 56, 87],
+            "chemistry": [12, 62, 71, 86, 36],
+            "maths": [46, 86, 98, 86, 67]
+
+        },
+        "sports": {
+            "shotput": 1
+        },
+        "remarks": ["Good"]
     },
     {
         "id": 3,
-        "name": "Cyril",
+        "name": "Steffy",
         "class": "8",
-        "address": "Green view, attingal, TVMM",
-        "phone": "9658741236",
-        "isActve": true
+        "address": "1601 E Alton Gloor Blvd",
+        "phone": "08757465487",
+        "isActive": false,
+        "marks": {
+            "physics": [17, 66, 78, 56, 87],
+            "chemistry": [25, 62, 71, 86, 36],
+            "maths": [77, 86, 98, 86, 67]
+
+        },
+        "sports": {
+        },
+        "remarks": ["Notes not submitted"]
     },
     {
         "id": 4,
-        "name": "Divya",
-        "class": "5",
-        "address": "Sunshine, nedumangad, TVMM",
-        "phone": "7896541230",
-        "isActve": false
+        "name": "Godman",
+        "class": "6",
+        "address": "1270 Diamond Springs Rd #102",
+        "phone": "0987098098",
+        "isActive": false,
+        "marks": {
+            "physics": [66, 66, 78, 56, 87],
+            "chemistry": [65, 62, 71, 86, 36],
+            "maths": [98, 86, 98, 86, 67]
+
+        },
+        "sports": {
+            "100m": 1
+        },
+        "remarks": ["Missed class"]
     },
     {
         "id": 5,
-        "name": "Ebin",
+        "name": "Dino",
         "class": "9",
-        "address": "Hilltop, kovalam, TVMM",
-        "phone": "9123456789",
-        "isActve": true
+        "address": "325 Kennedy Memorial Dr",
+        "phone": "07978689865",
+        "isActive": true,
+        "marks": {
+            "physics": [77, 66, 78, 56, 87],
+            "chemistry": [87, 62, 71, 86, 36],
+            "maths": [12, 86, 98, 86, 67]
+
+        },
+        "sports": {
+        },
+        "remarks": ["Good"]
     },
     {
         "id": 6,
-        "name": "Fiona",
-        "class": "6",
-        "address": "Seaside, poovar, TVMM",
-        "phone": "8765432109",
-        "isActve": false
-    },
-    {
-        "id": 7,
-        "name": "George",
+        "name": "Freddy",
         "class": "7",
-        "address": "Palm grove, neyyattinkara, TVMM",
-        "phone": "9876543210",
-        "isActve": true
-    },
-    {
-        "id": 8,
-        "name": "Hanna",
-        "class": "8",
-        "address": "Lakeside, vamanapuram, TVMM",
-        "phone": "7654321098",
-        "isActve": false
-    },
-    {
-        "id": 9,
-        "name": "Ivan",
-        "class": "5",
-        "address": "Meadow view, kazhakuttom, TVMM",
-        "phone": "8901234567",
-        "isActve": true
-    },
-    {
-        "id": 10,
-        "name": "Jaya",
-        "class": "9",
-        "address": "Ocean breeze, anchuthengu, TVMM",
-        "phone": "6789012345",
-        "isActve": false
+        "address": "1601 E Alton Gloor Blvd",
+        "phone": "08757465487",
+        "isActive": false,
+        "marks": {
+            "physics": [59, 66, 78, 56, 87],
+            "chemistry": [33, 62, 71, 86, 36],
+            "maths": [77, 86, 98, 86, 67]
+
+        },
+        "sports": {
+            "hurdles": 1
+        },
+        "remarks": []
     }
 ]

@@ -1,25 +1,32 @@
-import React, { useEffect, useState } from 'react';
+import React, { use, useEffect, useState } from 'react';
 import axios from 'axios';
-import { useParams } from 'react-router-dom'
+import './Details.css';
+import { useParams, useNavigate, useLocation, NavLink, Outlet } from 'react-router-dom'
+
+
 export default function Details() {
-    const [user, setUser] = useState(null)
+    const location = useLocation()
+    const state = location.state;
+    const [user, setUser] = useState(state?.user || null);
     const { userId } = useParams();
     useEffect(() => {
-        axios.get('/data.json')
-            .then((response) => {
-                const userDetails = response.data.find((userDetails) => userDetails.id == userId);
-                if (userDetails) {
-                    setUser(userDetails)
-                }
-            })
-            .catch((error) => {
-                console.error('Error fetching user details:', error);
-            });
-    }, [])
-
+        if (!user) {
+            axios.get('/data.json')
+                .then((response) => {
+                    const userDetails = response.data.find((userDetails) => userDetails.id == userId);
+                    if (userDetails) {
+                        setUser(userDetails)
+                    }
+                })
+                .catch((error) => {
+                    console.error('Error fetching user details:', error);
+                });
+        }
+    }, [user, userId])
+    const navigate = useNavigate();
     return (
         <div className='page details'>
-           {user ? (
+            {user ? (
                 <div>
                     <h2>{user.name}</h2>
                     <p><strong>ID:</strong> {user.id}</p>
@@ -33,6 +40,17 @@ export default function Details() {
                 <p>User not found</p>
             )
             }
+           <div className='submenu'>
+        <NavLink to={`/details/${userId}/`} state={{ user }} end><span>Marks</span></NavLink>
+        <NavLink to={`/details/${userId}/sports`} state={{ user }}><span>Sports</span></NavLink>
+        <NavLink to={`/details/${userId}/remarks`} state={{ user }}><span>Remarks</span></NavLink>
+      </div>
+            <div className='body'>
+                <Outlet context={user}/>
+            </div>
+            <button onClick={() => {
+                navigate('/users')
+            }}>Back</button>
         </div>
     )
 }

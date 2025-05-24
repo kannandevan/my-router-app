@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './Users.css'
-import { Link, useSearchParams } from 'react-router-dom';
+import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 
 const Users = () => {
     const [data, setData] = useState([]);
     const [searchParams,setSearchParams]=useSearchParams();
+    const navigate =useNavigate();
     useEffect(() => {
         axios
             .get('/data.json')
@@ -56,8 +57,14 @@ const Users = () => {
                 })
                 .map((user, index) => {
                     return (
-                        <div className='users-item' key={index}>
-                            <div className='name'><Link to={`/details/${user.id}`}>{user.name}</Link> </div>
+                        <div className='users-item' key={user.id} onClick={()=>{
+                           navigate(`/details/${user.id}`,{
+                            state:{
+                                user:user
+                            }
+                           })
+                        }} >
+                            <div className='name'>{user.name} </div>
                             <div className='address'>Address: {user.address || 'No address'}</div>
                             <div className='address'>Class: {user.class || 'No address'}</div>
                         </div>
