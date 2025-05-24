@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
 import Settings from './pages/Settings';
 import Home from './pages/Home';
 import Usage from './pages/Usage';
@@ -13,19 +13,25 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Header />
 
         <Routes>
-          <Route path="settings" element={<Settings />} />
-          <Route path="usage" element={<Usage />} />
-          <Route path="users" element={<Users />} />
-          <Route path="/" element={<Home />} />
-          <Route path="details/:userId/*" element={<Details />} >
-            <Route path='' element={<Marks />} />
-            <Route path='sports' element={<Sports />} />
-            <Route path='remarks' element={<Remarks />} />
+          <Route path="/" element={<Header />} >
+            <Route index element={<Home />} />/
+            <Route path="settings" element={<Settings />} />
+            <Route path="usage" element={<Usage />} />
+            <Route path="users" >
+              <Route index element={<Users />} />
+              <Route path=":userId/*" element={<Details />} >
+                <Route path='' index element={<Marks />} />
+                <Route path='sports' element={<Sports />} />
+                <Route path='remarks' element={<Remarks />} />
+              </Route>
+            </Route>
+
+            <Route path="*" element={<h2>Oops Page Not Found</h2>} />
           </Route>
-          <Route path="*" element={<h2>Oops Page Not Found</h2>} />
+
+
         </Routes>
       </div>
     </BrowserRouter>

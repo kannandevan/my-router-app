@@ -58,7 +58,7 @@ const Users = () => {
                 .map((user, index) => {
                     return (
                         <div className='users-item' key={user.id} onClick={()=>{
-                           navigate(`/details/${user.id}`,{
+                           navigate(`${user.id}`,{
                             state:{
                                 user:user
                             }

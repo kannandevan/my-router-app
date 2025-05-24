@@ -41,15 +41,15 @@ export default function Details() {
             )
             }
            <div className='submenu'>
-        <NavLink to={`/details/${userId}/`} state={{ user }} end><span>Marks</span></NavLink>
-        <NavLink to={`/details/${userId}/sports`} state={{ user }}><span>Sports</span></NavLink>
-        <NavLink to={`/details/${userId}/remarks`} state={{ user }}><span>Remarks</span></NavLink>
+        <NavLink to={`/users/${userId}/`} state={{ user }} end><span>Marks</span></NavLink>
+        <NavLink to={`/users/${userId}/sports`} state={{ user }}><span>Sports</span></NavLink>
+        <NavLink to={`/users/${userId}/remarks`} state={{ user }}><span>Remarks</span></NavLink>
       </div>
             <div className='body'>
                 <Outlet context={user}/>
             </div>
             <button onClick={() => {
-                navigate('/users')
+                navigate('..')
             }}>Back</button>
         </div>
     )

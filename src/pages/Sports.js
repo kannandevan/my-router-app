@@ -4,22 +4,22 @@ function Sports() {
     const { sports } = useOutletContext();
     console.log(sports);
     return  (
-        <div className="sports">
-            {
-                Object.keys(sports).map((item) => {
-                    return (
-                        <div key={item}>
-                            <div>
-                                {item}
-                            </div>
-                            <div>
-                                {sports[item] > 0 ? 'Position ' + sports[item] : 'Participated'}
-                            </div>
+    <div className="sports">
+        {
+            Object.keys(sports).map((item) => {
+                return (
+                    <div key={item}>
+                        <div>
+                            {item}
                         </div>
-                    )
-                })
-            }
-        </div>
-      )
+                        <div>
+                            {sports[item] > 0 ? 'Position ' + sports[item] : 'Participated'}
+                        </div>
+                    </div>
+                )
+            })
+        }
+    </div>
+  )
 }
 export default Sports;
