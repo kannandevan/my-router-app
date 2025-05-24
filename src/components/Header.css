@@ -1,0 +1,22 @@
+.header{
+    background-color: blueviolet;
+    padding: 20px;
+    width: 100%;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+.header span{
+    padding: 1rem;
+}
+.header .active{
+    background-color: #161616;
+    color: rgb(20, 228, 217) !important;
+    border-bottom:5px solid #888888;
+    border-radius: 5px;
+    /*Adding inner border*/
+
+}

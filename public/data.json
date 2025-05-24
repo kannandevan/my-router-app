@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "Albert",
+        "class": "6",
+        "address": "Kollam house, meppadi, TVMM",
+        "phone": "9677526257",
+        "isActve": false
+    },
+    {
+        "id": 2,
+        "name": "Bincy",
+        "class": "7",
+        "address": "Rose villa, varkala, TVMM",
+        "phone": "8745632145",
+        "isActve": true
+    },
+    {
+        "id": 3,
+        "name": "Cyril",
+        "class": "8",
+        "address": "Green view, attingal, TVMM",
+        "phone": "9658741236",
+        "isActve": true
+    },
+    {
+        "id": 4,
+        "name": "Divya",
+        "class": "5",
+        "address": "Sunshine, nedumangad, TVMM",
+        "phone": "7896541230",
+        "isActve": false
+    },
+    {
+        "id": 5,
+        "name": "Ebin",
+        "class": "9",
+        "address": "Hilltop, kovalam, TVMM",
+        "phone": "9123456789",
+        "isActve": true
+    },
+    {
+        "id": 6,
+        "name": "Fiona",
+        "class": "6",
+        "address": "Seaside, poovar, TVMM",
+        "phone": "8765432109",
+        "isActve": false
+    },
+    {
+        "id": 7,
+        "name": "George",
+        "class": "7",
+        "address": "Palm grove, neyyattinkara, TVMM",
+        "phone": "9876543210",
+        "isActve": true
+    },
+    {
+        "id": 8,
+        "name": "Hanna",
+        "class": "8",
+        "address": "Lakeside, vamanapuram, TVMM",
+        "phone": "7654321098",
+        "isActve": false
+    },
+    {
+        "id": 9,
+        "name": "Ivan",
+        "class": "5",
+        "address": "Meadow view, kazhakuttom, TVMM",
+        "phone": "8901234567",
+        "isActve": true
+    },
+    {
+        "id": 10,
+        "name": "Jaya",
+        "class": "9",
+        "address": "Ocean breeze, anchuthengu, TVMM",
+        "phone": "6789012345",
+        "isActve": false
+    }
+]

@@ -1,0 +1,15 @@
+.users{
+    font-size:1em;
+    padding: 10px;
+}
+.users .users-item{
+    border: 1px solid gray;
+    padding: 10px;
+    margin-bottom: 2px;
+    border-radius: 2px;
+    background: rgb(207, 194, 194);
+}
+.users .address{
+    font-size: .8em;
+    color: rgb(50, 12, 85);
+}
